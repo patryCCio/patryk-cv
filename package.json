@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "smooth-scrollbar": "^8.8.1",
+    "three": "^0.150.1"
+  }
+}

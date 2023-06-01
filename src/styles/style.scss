@@ -1,0 +1,67 @@
+@import "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $color3;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $color7;
+  border-radius: 3px;
+  outline: none;
+}
+
+.big-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color4;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: calc(50svh - 50px);
+  transform: translateX(100vw);
+  left: 0;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 4em;
+  letter-spacing: 10px;
+}
+
+@media (min-width: 1024px) {
+  .big-h2{
+    font-size: 12em;
+  }
+}
+
+@media (min-width: 1336px) and (orientation: landscape){
+  .big-h2 {
+    height: 800px;
+    top: calc(50vh - 400px);
+    font-size: 18em;
+    letter-spacing: 20px;
+  }
+}

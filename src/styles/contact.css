@@ -1,0 +1,498 @@
+.contact {
+  width: 100%;
+  height: 300svh;
+  background-color: #001220;
+  position: relative;
+}
+
+.contact .contact-holding-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.contact .contact-holding-wrapper #processor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.contact .contact-holding-wrapper #processor .processor-1 {
+  fill: none;
+  stroke: #004a5f;
+}
+
+.contact .contact-holding-wrapper #processor .processor-2 {
+  fill: none;
+  stroke: #00af6b;
+}
+
+.contact .contact-holding-wrapper #processor .processor-3 {
+  fill: none;
+  stroke: #004a5f;
+}
+
+.contact .contact-holding-wrapper #processor .processor-4 {
+  fill: none;
+  stroke: #009675;
+}
+
+.contact .contact-holding-wrapper #processor #smaller {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact .contact-holding-wrapper #processor #smaller rect {
+  stroke-width: 2;
+}
+
+.contact .contact-holding-wrapper #processor #smaller circle {
+  stroke: #32bb64;
+  stroke-width: 0.5;
+}
+
+.contact .contact-holding-wrapper #processor #smaller polyline {
+  stroke-width: 1;
+}
+
+.contact .contact-holding-wrapper #processor #bigger rect {
+  stroke-width: 3.5;
+}
+
+.contact .contact-holding-wrapper #processor #bigger circle {
+  stroke: #00646f;
+  stroke-width: 2;
+}
+
+.contact .contact-holding-wrapper #processor #bigger polyline {
+  stroke-width: 2;
+}
+
+.contact .contact-holding-wrapper .h2-contact {
+  z-index: 10;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 4em;
+  height: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #32bb64;
+}
+
+.contact .contact-holding-wrapper #contact-h2-left {
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.contact .contact-holding-wrapper #contact-h2-right {
+  top: calc(50% - 50px);
+  right: calc(50% - 100px);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.contact .contact-holding-wrapper .contact-left {
+  position: absolute;
+  top: 0;
+  height: 50svh;
+  width: 100%;
+  background-color: #003348;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.contact .contact-holding-wrapper .contact-right {
+  position: absolute;
+  bottom: 0;
+  height: 50svh;
+  width: 100%;
+  background-color: #004a5f;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.contact .contact-holding-wrapper .contact-info {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-right {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100svh - 80px);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-right img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100svh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  height: 80px;
+  color: #32bb64;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h3 {
+  color: #00af6b;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box i {
+  font-size: 2em;
+  position: relative;
+  top: -7px;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box p {
+  color: white;
+  position: relative;
+  font-size: 2em;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social span {
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #007d76;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social .socials {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social .socials a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #00af6b;
+  opacity: 0;
+}
+
+.contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social .socials a i {
+  font-size: 2.5em;
+}
+
+@media (orientation: landscape) {
+  .contact .contact-holding-wrapper .h2-contact {
+    z-index: 10;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 4em;
+    height: 100px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #32bb64;
+  }
+  .contact .contact-holding-wrapper #contact-h2-left {
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper #contact-h2-right {
+    top: calc(50% - 50px);
+    right: calc(50% - 100px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-left {
+    position: absolute;
+    top: 0;
+    height: 50svh;
+    width: 100%;
+    background-color: #003348;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-right {
+    position: absolute;
+    bottom: 0;
+    height: 50svh;
+    width: 100%;
+    background-color: #004a5f;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-right {
+    height: calc(100svh - 60px);
+    width: 50%;
+    left: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left {
+    height: calc(100svh - 60px);
+    width: 50%;
+    left: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    height: 40px;
+    color: #32bb64;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h3 {
+    color: #00af6b;
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box i {
+    font-size: 1.2em;
+    top: 0;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box p {
+    color: white;
+    position: relative;
+    font-size: 1.3em;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social .socials a i {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact .contact-holding-wrapper #contact-h2-right {
+    top: calc(50% - 50px);
+    right: calc(50% - 100px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-left {
+    position: absolute;
+    top: 0;
+    height: 50svh;
+    width: 100%;
+    background-color: #003348;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-right {
+    position: absolute;
+    bottom: 0;
+    height: 50svh;
+    width: 100%;
+    background-color: #004a5f;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-right {
+    height: calc(100svh - 60px);
+    width: 50%;
+    left: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left {
+    height: calc(100svh - 60px);
+    width: 50%;
+    left: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box .box {
+    height: 50px;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h3 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box i {
+    font-size: 1.6em;
+    top: 0;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box h4 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .contact-info-box p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1336px) {
+  .contact .contact-holding-wrapper .contact-info .contact-info-left .box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left h3 {
+    font-size: 4em;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left i {
+    font-size: 2em;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left h4 {
+    font-size: 1.6em;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-left p {
+    font-size: 2em;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-info-right {
+    left: 50%;
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    opacity: 1;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-social-wrapper {
+    position: absolute;
+  }
+  .contact .contact-holding-wrapper .contact-info .contact-social-wrapper .contact-social .socials a i {
+    font-size: 2.5em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

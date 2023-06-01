@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/patryk-cv/portfolio/projects/kat10/static/css/main.5e9aba58.css",
+    "main.js": "/patryk-cv/portfolio/projects/kat10/static/js/main.f5c58c7d.js",
+    "index.html": "/patryk-cv/portfolio/projects/kat10/index.html",
+    "main.5e9aba58.css.map": "/patryk-cv/portfolio/projects/kat10/static/css/main.5e9aba58.css.map",
+    "main.f5c58c7d.js.map": "/patryk-cv/portfolio/projects/kat10/static/js/main.f5c58c7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e9aba58.css",
+    "static/js/main.f5c58c7d.js"
+  ]
+}

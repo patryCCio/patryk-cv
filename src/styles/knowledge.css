@@ -1,0 +1,330 @@
+.knowledge {
+  position: relative;
+  width: 100%;
+  height: 1500svh;
+}
+
+.knowledge .knowledge-holding {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.knowledge .knowledge-holding .knowledge-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #004a5f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#004a5f), color-stop(50%, #001220));
+  background: linear-gradient(180deg, #004a5f 0%, #001220 50%);
+}
+
+.knowledge .knowledge-holding .knowledge-wrapper canvas {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.knowledge .knowledge-holding .knowledge-info {
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.knowledge .knowledge-holding .knowledge-info h2 {
+  color: #32bb64;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 2em;
+  position: relative;
+  left: -2px;
+  width: 100%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  padding-bottom: 0px;
+}
+
+.knowledge .knowledge-holding .knowledge-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  padding-top: 0;
+  padding-left: 25px;
+  font-size: 1.2em;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.knowledge .knowledge-holding .box-1 {
+  top: 0;
+  left: 0%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.knowledge .knowledge-holding .box-1 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-1 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-2 {
+  top: 0;
+  right: 0%;
+}
+
+.knowledge .knowledge-holding .box-2 h2 {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-2 ul {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-3 {
+  top: 0;
+  left: 0%;
+}
+
+.knowledge .knowledge-holding .box-3 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-3 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-4 {
+  top: 0;
+  right: 0%;
+}
+
+.knowledge .knowledge-holding .box-4 h2 {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-4 ul {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-5 {
+  top: 0;
+  left: 0%;
+}
+
+.knowledge .knowledge-holding .box-5 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-5 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-6 {
+  top: 0;
+  right: 0%;
+}
+
+.knowledge .knowledge-holding .box-6 h2 {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-6 ul {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-7 {
+  top: 0;
+  left: 0%;
+}
+
+.knowledge .knowledge-holding .box-7 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-7 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-8 {
+  top: 0;
+  right: 0%;
+}
+
+.knowledge .knowledge-holding .box-8 h2 {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-8 ul {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-9 {
+  top: 0;
+  left: 0%;
+}
+
+.knowledge .knowledge-holding .box-9 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-9 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-10 {
+  top: 0;
+  right: 0%;
+}
+
+.knowledge .knowledge-holding .box-10 h2 {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-10 ul {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-11 {
+  top: 0;
+  left: 0%;
+}
+
+.knowledge .knowledge-holding .box-11 h2 {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+.knowledge .knowledge-holding .box-11 ul {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: 0;
+}
+
+@media (min-width: 1336px) {
+  .knowledge .knowledge-holding .knowledge-info {
+    padding: 20px;
+  }
+  .knowledge .knowledge-holding .knowledge-info h2 {
+    font-size: 6em;
+    left: -2px;
+  }
+  .knowledge .knowledge-holding .knowledge-info h3 {
+    font-size: 3em;
+  }
+  .knowledge .knowledge-holding .knowledge-info p {
+    line-height: 1.3em;
+    font-size: 1.2em;
+    left: 0px;
+    top: -18px;
+  }
+  .knowledge .knowledge-holding .knowledge-info ul {
+    font-size: 1.4em;
+  }
+  .knowledge .knowledge-holding .box-1 {
+    left: 50%;
+  }
+  .knowledge .knowledge-holding .box-2 {
+    right: 50%;
+  }
+  .knowledge .knowledge-holding .box-3 {
+    left: 50%;
+  }
+  .knowledge .knowledge-holding .box-4 {
+    right: 50%;
+  }
+  .knowledge .knowledge-holding .box-5 {
+    left: 50%;
+  }
+  .knowledge .knowledge-holding .box-6 {
+    right: 50%;
+  }
+  .knowledge .knowledge-holding .box-7 {
+    left: 50%;
+  }
+  .knowledge .knowledge-holding .box-8 {
+    right: 50%;
+  }
+  .knowledge .knowledge-holding .box-9 {
+    left: 50%;
+  }
+  .knowledge .knowledge-holding .box-10 {
+    right: 50%;
+  }
+  .knowledge .knowledge-holding .box-11 {
+    left: 50%;
+  }
+}
+/*# sourceMappingURL=knowledge.css.map */

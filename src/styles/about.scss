@@ -1,0 +1,367 @@
+@import "./variables";
+
+.about {
+  position: relative;
+  background-color: $bg1;
+  width: 100%;
+  height: 500svh;
+
+  .about-holding-wrapper {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+    #about-svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      .about-svg-path {
+        stroke: $color6;
+        stroke-width: 0.5;
+        fill: transparent;
+      }
+    }
+
+    .about-holding {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      canvas {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .about-content {
+      position: absolute;
+      left: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+      h2 {
+        width: 100%;
+        text-align: start;
+        background-color: rgba(0, 51, 72, 0.5);
+        padding: 40px 40px 0px 40px;
+        font-size: 2rem;
+
+        font-family: "Saira condensed", sans-serif;
+        color: $color8;
+      }
+      p {
+        color: $white1;
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding: 40px;
+        background-color: rgba(0, 51, 72, 0.5);
+        span {
+          color: $color8;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #about-content-div-1 {
+      transform: translate(-50%, -100vh);
+    }
+
+    #about-content-div-2 {
+      transform: translate(-50%, -100vh);
+    }
+
+    #about-content-div-3 {
+      transform: translate(-50%, -100vh);
+    }
+
+    #about-content-div-4 {
+      transform: translate(-50%, -100vh);
+    }
+  }
+}
+
+.about-history {
+  position: relative;
+  width: 100%;
+  background-color: $bg1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  #history-path {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+    .history-cls1 {
+      stroke-width: 2;
+      stroke: $color6;
+      fill: none;
+    }
+  }
+
+  .date {
+    font-size: 2em;
+    color: $color8;
+    font-family: "Saira Condensed", sans-serif;
+    width: 100%;
+  }
+  .his-description {
+    color: $white1;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+  }
+
+  .company {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.2em;
+  }
+
+  .his-el {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    color: $white1;
+    transition: 0.3s;
+    transform: translateX(-300px);
+    opacity: 0;
+    padding: 15px 40px;
+    z-index: 3;
+  }
+
+  .his-el.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .his-el:nth-child(2n) {
+    transform: translateX(300px);
+    .date {
+      text-align: start;
+    }
+  }
+
+  .his-el:nth-child(2n).active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .his-1 {
+    top: 17.5%;
+  }
+  .his-2 {
+    top: 22%;
+  }
+  .his-3 {
+    top: 29.5%;
+  }
+
+  .his-4.active {
+    top: 33.5%;
+    transform: translateX(0);
+  }
+
+  .his-5 {
+    top: 40.5%;
+  }
+
+  .his-6 {
+    top: 45.5%;
+  }
+
+  .his-7 {
+    top: 52.5%;
+  }
+
+  .his-8 {
+    top: 57%;
+  }
+
+  .his-9 {
+    top: 64%;
+  }
+  .his-10 {
+    top: 68.5%;
+  }
+
+  .his-11 {
+    top: 75.5%;
+  }
+
+  .his-12 {
+    top: 80%;
+  }
+
+  .his-13 {
+    top: 87.5%;
+  }
+
+  .his-14 {
+    top: 92%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .about {
+    .about-holding-wrapper {
+      .about-left {
+        width: 100%;
+      }
+      .about-content {
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1336px) and (orientation: landscape) {
+  .about {
+    flex-direction: row;
+
+    .about-holding-wrapper {
+      .about-left {
+        height: 100vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .about-history {
+    .date {
+      font-size: 3em;
+      color: $color8;
+      font-family: "Saira Condensed", sans-serif;
+      width: 100%;
+    }
+    .his-description {
+      color: $white1;
+      font-family: "Lato", sans-serif;
+      font-size: 1.6em;
+      width: 100%;
+    }
+
+    .company {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 2em;
+    }
+
+    .period {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 1.3em;
+    }
+    .his-el {
+      transform: translateX(600px);
+    }
+
+    .his-el:nth-child(2n) {
+      transform: translateX(-600px);
+    }
+
+    .his-el:nth-child(2n).active {
+      transform: translateX(-300px);
+    }
+    .his-el.active {
+      transform: translateX(300px);
+    }
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .about {
+    .about-holding-wrapper {
+      .about-left {
+        width: 100%;
+      }
+    }
+  }
+
+  .about-history {
+    .date {
+      font-size: 3em;
+      color: $color8;
+      font-family: "Saira Condensed", sans-serif;
+      width: 100%;
+    }
+    .his-description {
+      color: $white1;
+      font-family: "Lato", sans-serif;
+      font-size: 1.6em;
+      width: 100%;
+    }
+
+    .company {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 2em;
+    }
+
+    .period {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 1.3em;
+    }
+    .his-el {
+      transform: translateX(-600px);
+    }
+
+    .his-el:nth-child(2n) {
+      transform: translateX(600px);
+    }
+
+    .his-el:nth-child(2n).active {
+      transform: translateX(300px);
+    }
+
+    .his-el.active {
+      transform: translateX(-300px);
+    }
+  }
+}

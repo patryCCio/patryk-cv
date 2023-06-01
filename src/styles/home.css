@@ -1,0 +1,379 @@
+.home {
+  width: 100%;
+  height: 100svh;
+  max-height: 100svh;
+  overflow: hidden;
+  position: relative;
+  background: #001d2e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001d2e), color-stop(80%, #001220));
+  background: linear-gradient(180deg, #001d2e 0%, #001220 80%);
+}
+
+.home-container-circle {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.home-container-circle .circle {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 3px 0px #32bb64;
+          box-shadow: 0 0 3px 0px #32bb64;
+  position: absolute;
+  border: 1px solid #32bb64;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  -webkit-transform: translateY(130vh);
+          transform: translateY(130vh);
+}
+
+.color1 {
+  fill: #001d2e;
+}
+
+.color2 {
+  fill: #003348;
+}
+
+.color3 {
+  fill: #004a5f;
+}
+
+.color4 {
+  fill: #00646f;
+}
+
+.color5 {
+  fill: #007d76;
+}
+
+.color6 {
+  fill: #009675;
+}
+
+.color7 {
+  fill: #00af6b;
+}
+
+.color8 {
+  fill: #32bb64;
+}
+
+#visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(4) scaleX(1);
+          transform: scaleY(4) scaleX(1);
+}
+
+.cls-1 {
+  -webkit-transform: translate(calc(100% + 120px), 0);
+          transform: translate(calc(100% + 120px), 0);
+}
+
+.cls-2 {
+  -webkit-transform: translate(calc(0% - 120px), 100%);
+          transform: translate(calc(0% - 120px), 100%);
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#avatar {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+  position: relative;
+}
+
+.home-container {
+  position: relative;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-container .home-top {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.home-container .home-top .home-top-left {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-container .home-top .home-top-left img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.home-container .home-top .home-top-right {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Saira Condensed", sans-serif;
+  line-height: 40px;
+}
+
+.home-container .home-top .home-top-right h1 {
+  color: #32bb64;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.home-container .home-top .home-top-right h1 span {
+  display: inline-block;
+  position: relative;
+}
+
+.home-container .home-top .home-top-right h2 {
+  color: #00af6b;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home-container .home-top .home-top-right p {
+  color: #009675;
+  font-size: 1.7em;
+  position: relative;
+}
+
+.home-container .home-top .home-top-right p span {
+  font-size: 0.6em;
+  color: #ddd;
+}
+
+.home-container .home-button {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #32bb64;
+  border: 1px solid #32bb64;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-animation: scaleButton 2s infinite linear;
+          animation: scaleButton 2s infinite linear;
+}
+
+.home-container .home-button:hover {
+  background-color: #32bb64;
+  color: white;
+}
+
+@media (orientation: landscape) and (max-width: 1023px) {
+  #visual {
+    -webkit-transform: scaleY(1) scaleX(1.3);
+            transform: scaleY(1) scaleX(1.3);
+  }
+  .home-container .home-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home-container .home-top .home-top-left {
+    width: 50%;
+    height: 100%;
+  }
+  .home-container .home-top .home-top-right {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-container .home-top .home-top-right {
+    line-height: 100px;
+  }
+  .home-container .home-top .home-top-right h1 {
+    font-size: 4em;
+  }
+  .home-container .home-top .home-top-right h2 {
+    font-size: 3em;
+  }
+  .home-container .home-top .home-top-right p {
+    font-size: 2.4em;
+  }
+  .home-container .home-button {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .home-container {
+    padding-top: 90px;
+  }
+  .home-container .home-top .home-top-left {
+    width: 100%;
+    height: 100%;
+  }
+  .home-container .home-top .home-top-right {
+    width: 100%;
+    height: 100%;
+  }
+  .home-container .home-top .home-top-right h1 {
+    font-size: 7em;
+  }
+  .home-container .home-top .home-top-right h2 {
+    font-size: 5em;
+  }
+  .home-container .home-top .home-top-right p {
+    font-size: 3.4em;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .home-container .home-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home-container .home-top .home-top-left {
+    width: 50%;
+    height: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .home-container .home-top .home-top-right {
+    width: 50%;
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1336px) and (orientation: landscape) {
+  #visual {
+    -webkit-transform: scaleY(1.5) scaleX(1);
+            transform: scaleY(1.5) scaleX(1);
+  }
+  .home-container .home-top .home-top-right h1 {
+    font-size: 6.75em;
+    font-weight: bold;
+  }
+  .home-container .home-top .home-top-right h2 {
+    font-size: 5em;
+    font-weight: normal;
+  }
+  .home-container .home-top .home-top-right p {
+    font-size: 4.35em;
+    color: #32bb64;
+  }
+}
+
+@media (min-width: 1920px) and (orientation: landscape) {
+  #visual {
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes scaleButton {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleButton {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=home.css.map */
