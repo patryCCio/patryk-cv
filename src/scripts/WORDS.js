@@ -20,7 +20,6 @@ export const WORDS = [
     type: "normal",
   },
 
-
   {
     element: document.querySelector("#about-content-h2-2"),
     pl: "Więcej o mnie",
@@ -38,21 +37,21 @@ export const WORDS = [
   {
     element: document.querySelector("#about-content-1"),
     pl: "Witaj, <span>nazywam się</span> Patryk Szczerbiński! Moje zainteresowanie programowaniem zapoczątkowało się już w okresie technikum. Od tamtej pory kontynuuję swoją edukację na studiach informatycznych, gdzie zdobywam solidne podstawy i rozwijam swoje umiejętności programistyczne. Obecnie jestem studentem III roku informatyki, a oprócz studiów, pragnę poszerzać swoją wiedzę i zdobywać praktyczne doświadczenie jako programista <span>front-end</span> lub <span>full-stack</span>.",
-    eng: "Witaj, <span>nazywam się</span> Patryk Szczerbiński! Moje zainteresowanie programowanie zapoczątkowało się już w okresie technikum. Od tamtej pory kontynuuję swoją edukację na studiach informatycznych, gdzie zdobywam solidne podstawy i rozwijam swoje umiejętności programistyczne. Obecnie jestem studentem III roku informatyki, a oprócz studiów, pragnę poszerzać swoją wiedzę i zdobywać praktyczne doświadczenie jako programista front-end lub full-stack.",
+    eng: "Hello, <span>my name is</span> Patryk Szczerbiński! My interest in programming began in my school years and since then it has become my daily routine. Currently I’m a 3rd year Student of Computer Science, but apart from my studies I wish to expand my knowledge and gain practical experience as a front-end or full-stack developer.",
     type: "normal",
   },
 
   {
     element: document.querySelector("#about-content-2"),
     pl: "Jestem osobą, która przykłada dużą wagę do szczegółów i dbałości o jakość swojego kodu. Wierzę, że to właśnie w trudnych wyzwaniach najbardziej się uczymy, dlatego nie boję się podejmować nowych, wymagających projektów. Fascynuje mnie proces tworzenia interaktywnych interfejsów użytkownika i skutecznego rozwiązywania problemów związanych z programowaniem.",
-    eng: "Jestem osobą, która przykłada dużą wagę do szczegółów i dbałości o jakość swojego kodu. Wierzę, że to właśnie w trudnych wyzwaniach najbardziej się uczymy, dlatego nie boję się podejmować nowych, wymagających projektów. Fascynuje mnie proces tworzenia interaktywnych interfejsów użytkownika i skutecznego rozwiązywania problemów związanych z programowaniem.",
+    eng: "I’m a person who pays great attention to details and the quality of my coding. I believe that the greater the challenge is, the more we can learn by overcoming it. Therefore, I see challenges as opportunities and I’m not afraid of undertaking demanding projects. I find the process of creating interactive user interfaces and successfully solving programming problems very fascinating.",
     type: "normal",
   },
 
   {
     element: document.querySelector("#about-content-3"),
     pl: "Poza programowaniem, mam również zainteresowania związane z grafiką komputerową, rysowaniem, fotografią i sportem. Uważam, że różnorodność zainteresowań pomaga mi zachować kreatywność i elastyczność w podejściu do projektowania i rozwiązywania problemów.",
-    eng: "Poza programowaniem, mam również zainteresowania związane z grafiką komputerową, rysowaniem, muzyką i sportem. Uważam, że różnorodność zainteresowań pomaga mi zachować kreatywność i elastyczność w podejściu do projektowania i rozwiązywania problemów.",
+    eng: "Besides programming, I’m interested in computer graphics, drawing, photography and sports. In my opinion having a variety of hobbies helps me to remain creative and flexible in my approach to programming and solving problems.",
     type: "normal",
   },
 
