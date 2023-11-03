@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three JS - test</title>
+  
+  <script type="module" crossorigin src="/patryk-cv/portfolio/projects/catalogs/kat16/assets/index-b51eebf7.js"></script>
+  <link rel="stylesheet" href="/patryk-cv/portfolio/projects/catalogs/kat16/assets/index-97f88a58.css">
+</head>
+
+<body>
+
+  <script id="tubeFragmentShader" type="fragment">
+
+    uniform float u_time;
+    uniform sampler2D u_dots;
+    uniform sampler2D u_stripes;
+    varying vec2 vUv;
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+
+    void main() {
+
+      float time1 = u_time * 0.05;
+      float time2 = u_time * 0.05;
+
+      float texture1 = texture2D(u_stripes, vUv - time1).r;
+      float texture11 = texture2D(u_stripes, vUv - time1 * 1.5).r;
+      float texture3 = texture2D(u_dots, vUv*vec2(6.0, 4.0) - time1 * 1.5).r;
+
+      float alpha = min(texture1, texture11) + texture3;
+
+      vec3 viewDir = -normalize(vWorldPosition.xyz - cameraPosition);
+      
+      float fresnel = dot(viewDir, vNormal);
+      fresnel = pow(fresnel, 3.0);
+
+      vec3 color1 = vec3(0.579, 0.903, 0.983);
+      gl_FragColor = vec4(color1, 1.0);
+      gl_FragColor = vec4(vUv, 0.0, 1.0);
+      gl_FragColor = vec4(vec3(color1), alpha*fresnel);
+      // gl_FragColor = vec4(vec3(fresnel), 1.0);
+    }
+  </script>
+  <script id="tubeVertexShader" type="vertex">
+
+    uniform float u_time;
+    varying vec2 vUv;
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+
+    void main() {
+      vUv = uv;
+      vNormal = normal;
+
+      vWorldPosition = (modelMatrix * vec4(position, 1.0)).xyz;
+
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  </script>
+
+  <script id="dotsFragmentShader" type="fragment">
+    float PI = 3.141592653589793238;
+    uniform sampler2D u_normals;
+    varying vec2 vUv;
+
+    void main() {
+      vec3 color = vec3(0.136, 0.559, 0.852);
+      vec2 st = gl_PointCoord.xy;
+
+      float disc = length(st - vec2(0.5));
+      float alpha = smoothstep(0.5, 0.4, disc);
+
+      vec4 normalTexture = texture2D(u_normals, st);
+
+      vec3 normal = vec3(normalTexture.rg * 2.0 - 1.0, 0.0);
+      normal.z = sqrt(1.0 - normal.x * normal.x - normal.y * normal.y);
+
+      normal = normalize(normal);
+
+      vec3 lightPos = vec3(1.0, 1.0, 1.0);
+      float diffuse = max(0.0, dot(normal, normalize(lightPos)));
+      vec3 color1 = vec3(0.579, 0.903, 0.983);
+
+      gl_FragColor = vec4(color1, alpha*diffuse*0.5);
+    }
+  </script>
+  <script id="dotsVertexShader" type="vertex">
+    uniform float u_time;
+    varying vec3 vPosition;
+    uniform sampler2D texture1;
+    float PI = 3.141592653589793238;
+    attribute vec3 aRandom;
+    attribute float aSize;
+
+    vec3 getPos(float progress) {
+      float angle = progress * PI * 2.0;
+
+      float x = sin(angle) + 2.0 * sin(2.0 * angle);
+      float y = cos(angle) - 2.0 * cos(2.0 * angle);
+      float z = -sin(3.0 * angle);
+      
+      return vec3(x,y,z);
+    }
+
+    vec3 getTangent(float progress){
+      float angle = progress * PI * 2.0;
+
+      float x = cos(angle) + 4.0 * cos(2.0 * angle);
+      float y = -sin(angle) + 4.0 * sin(2.0 * angle);
+      float z = 3.0 * -cos(3.0 * angle);
+      
+      return normalize(vec3(x,y,z));
+    }
+
+    vec3 getNormal(float progress){
+      float angle = progress * PI * 2.0;
+
+      float x = -sin(angle) - 8.0 * sin(2.0 * angle);
+      float y = -cos(angle) + 8.0 * cos(2.0 * angle);
+      float z = 9.0 * sin(3.0 * angle);
+      
+      return normalize(vec3(x,y,z));
+    }
+
+    void main() {
+      vec3 pos = position;
+      float progress = fract(u_time * 0.05 + aRandom.x);
+      pos = getPos(progress);
+      vec3 normal = getNormal(progress);
+      vec3 tangent = getTangent(progress);
+      vec3 binormal = normalize(cross(normal, tangent));
+
+      float radius = 0.3 + aRandom.z * 0.1;
+      float cx = radius * cos(aRandom.y * PI * 2.0 * u_time * 0.5 + aRandom.z * 7.0);
+      float cy = radius * sin(aRandom.y * PI * 2.0 * u_time * 0.5 + aRandom.z * 7.0);
+
+      pos += (normal * cx + binormal * cy);
+
+      vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
+      gl_PointSize = 10.0 * (1.0 / -mvPosition.z);
+      gl_Position = projectionMatrix * mvPosition;
+    }
+  </script>
+  
+</body>
+
+</html>
